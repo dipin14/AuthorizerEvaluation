@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "DashBoard";
+    ViewBag.Name = HttpContext.Current.Session["Username"];
+}
+
+<h2>DashBoard</h2>
+@if (HttpContext.Current.Session["Username"] != null)
+{
+    <p>Welcome <b>@ViewBag.Name</b></p>
+}
+else
+{
+    <p>Sorry couldn't identify users</p>
+}
+
