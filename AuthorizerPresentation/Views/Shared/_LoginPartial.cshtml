@@ -1,0 +1,22 @@
+﻿@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Login", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("Hello " + User.Identity.Name + "!", "UserDashBoard", "Login", routeValues: null, htmlAttributes: new { title = "UserDashBoard" })
+            </li>
+            <li>@Html.ActionLink("Manage Accounts", "Index", "User", routeValues: null, htmlAttributes: new { id = "manageUserAdmin" })</li>
+            <li>@Html.ActionLink("Manage Roles", "Index", "Role", routeValues: null, htmlAttributes: new { id = "manageRoleAdmin" })</li>
+            <li>@Html.ActionLink("Log Off", "LogOff", "Login", routeValues: null, htmlAttributes: new { id = "logOff" })</li>
+        </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">        
+        <li>@Html.ActionLink("Log in", "Login", "Login", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

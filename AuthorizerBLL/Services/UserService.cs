@@ -36,11 +36,6 @@ namespace AuthorizerBLL.Services
             return _iUserRepository.Delete(user);
         }
 
-        public int checkAdmin()
-        {
-            return _iUserRepository.AdminExists();
-        }
-
         public IList<UserDTO> FindAll()
         {
             return _iUserRepository.FindAll().Select(b => new UserDTO()
@@ -49,7 +44,7 @@ namespace AuthorizerBLL.Services
                 LastName = b.lastName,
                 Password = b.password,
                 UserName = b.userName,
-                Role = b.Role
+                RoleId = b.roleId
             }).ToList();
         }
 

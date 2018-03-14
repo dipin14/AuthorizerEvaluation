@@ -12,18 +12,25 @@ namespace AuthorizerDAL.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        UserDbContext db = new UserDbContext();
-
         public int Create(User user)
         {
-            if (user != null)
+            try
             {
-                user.Role = GetByRoleName(user.Role.roleName);
-                db.Users.Add(user);
-                db.SaveChanges();
-                return 1;
+                if (user != null)
+                {
+                    using (var db = new UserDbContext())
+                    {
+                        db.Users.Add(user);
+                        db.SaveChanges();
+                    }
+                    return 1;
+                }
+                return 0;
             }
-            return 0;
+            catch(Exception)
+            {
+                return -1;
+            }
         }
 
         public int Update(User user)
@@ -32,13 +39,16 @@ namespace AuthorizerDAL.Repositories
             {
                 User userObj = GetByUserName(user.userName);
                 userObj = UpdateWith(userObj, user);
-                db.Entry(userObj).State = EntityState.Modified;
-                db.SaveChanges();
+                using (var db = new UserDbContext())
+                {
+                    db.Entry(userObj).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
                 return 1;
             }
             return 0;
         }
-
+        
         private User UpdateWith(User old, User updated)
         {
             old.firstName = updated.firstName;
@@ -46,57 +56,62 @@ namespace AuthorizerDAL.Repositories
             old.roleId = updated.roleId;
             return old;
         }
-
+        
         public int Delete(User user)
         {
             if (user != null)
             {
                 User userObj = GetByUserName(user.userName);
-                db.Users.Remove(userObj);
-                db.SaveChanges();
+                using (var db = new UserDbContext())
+                {
+                    db.Users.Attach(userObj);
+                    db.Users.Remove(userObj);
+                    db.SaveChanges();
+                }
                 return 1;
             }
             return 0;
         }
-
-        public int AdminExists()
-        {
-            if (db.Users.Any(u => u.Role.roleName.ToLower() == "admin"))
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
-        }
-
+        
         public IList<User> FindAll()
         {
-            return db.Users.ToList();
+            using (var db = new UserDbContext())
+            {
+                var userList = db.Users.ToList();
+                return userList;
+            }
         }
-
+                
         public User GetByUserName(string userName)
         {
-            var a = db.Users.Where(u => u.userName == userName).FirstOrDefault();
-            return a;
+            using (var db = new UserDbContext())
+            {
+                var a = db.Users.Where(u => u.userName == userName).FirstOrDefault();
+                return a;
+            }
         }
 
         public Role GetByRoleName(string roleName)
         {
-            var roleDetails = db.Roles.Where(r => r.roleName == roleName).FirstOrDefault();
-            return roleDetails;
+            using (var db = new UserDbContext())
+            {
+                var roleDetails = db.Roles.Where(r => r.roleName == roleName).FirstOrDefault();
+                return roleDetails;
+            }
         }
 
         public User Login(User loginUser)
         {
-            var obj = db.Users.Where(u => u.userName.Equals(loginUser.userName) && u.password.Equals(loginUser.password)).FirstOrDefault();
-            if (obj != null)
+            using (var db = new UserDbContext())
             {
-                return obj;
+                var obj = db.Users.Where(u => u.userName.Equals(loginUser.userName) && u.password.Equals(loginUser.password)).FirstOrDefault();
+                if (obj != null)
+                {
+                    return obj;
+                }
+                else
+                    return null;
             }
-            else
-                return null;
         }
     }
 }

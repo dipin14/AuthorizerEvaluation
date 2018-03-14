@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AuthorizerDAL.DatabaseContext
 {
-    class UserDbContext : DbContext
+    public class UserDbContext : DbContext
     {
         public UserDbContext() : base(nameOrConnectionString: "Default") { }
 
@@ -14,7 +14,9 @@ namespace AuthorizerDAL.DatabaseContext
             modelBuilder.HasDefaultSchema("public");
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Role>().Property(c => c.roleName).HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute("IX_Name") { IsUnique = true }));
+            modelBuilder.Entity<User>().Property(c => c.userName).HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute("US_Name") { IsUnique = true }));
+
+            modelBuilder.Entity<Role>().Property(c => c.roleName).HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute("RO_Name") { IsUnique = true }));
         }
 
         public DbSet<User> Users { get; set; }

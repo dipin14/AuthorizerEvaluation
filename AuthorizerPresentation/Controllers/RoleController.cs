@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace AuthorizerPresentation.Controllers
 {
+    [Authorize(Roles ="admin")]
     public class RoleController : Controller
     {
         private readonly IRoleService _roleService;
@@ -17,25 +18,63 @@ namespace AuthorizerPresentation.Controllers
         {
             _roleService = roleService;
         }
+
+        /// <summary>
+        /// Retrieves all roles list and displays in grid
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
+            //Mapping RoleDTO list to RoleViewModel list
             IList<RoleViewModel> roles = _roleService.FindAll().Select(b => new RoleViewModel()
             {
-                RoleName = b.RoleName
+                RoleName = b.RoleName,
+                AccessToPageA = b.AccessToPageA,
+                AccessToPageB = b.AccessToPageB,
+                AccessToPageC = b.AccessToPageC
             }).ToList();
             return View(roles);
         }
+
         public ActionResult Create()
         {
             return View();
         }
+
+        /// <summary>
+        /// Creating new Role using RoleViewModel
+        /// </summary>
+        /// <param name="roleView"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Create(RoleViewModel roleView)
         {
-            _roleService.Create(roleView);
-            return RedirectToAction("Index");
+            if (roleView != null)
+            {
+                roleView.RoleName.Trim();
+                var createResult = _roleService.Create(roleView);
+                if (createResult == -1)
+                {
+                    ModelState.AddModelError("RoleName", "Role Name Already Exists");
+                    return View(roleView);
+                }
+                else if (createResult == 0)
+                {
+                    ViewBag.Message = "Db Creation Error! Please Restart Application";
+                }
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
         }
 
+        /// <summary>
+        /// Editing existing role
+        /// </summary>
+        /// <param name="rolename"></param>
+        /// <returns></returns>
         public ActionResult Edit(string rolename)
         {
             if (rolename == null)
@@ -54,21 +93,56 @@ namespace AuthorizerPresentation.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(RoleViewModel roleDetails, FormCollection requestValidator)
         {
-            _roleService.Update(roleDetails);
-            return RedirectToAction("Index");
+            try
+            {
+                _roleService.Update(roleDetails);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                ModelState.AddModelError("RoleName", "Please enter non-existing Role Name");
+                return View(roleDetails);
+            }
         }
 
+        /// <summary>
+        /// Deleting role
+        /// </summary>
+        /// <param name="rolename"></param>
+        /// <returns></returns>
         public ActionResult Delete(string rolename)
         {
-            RoleViewModel roleCollection = _roleService.GetByRoleName(rolename);
-            return View(roleCollection);
+            if (rolename == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            else
+            {
+                RoleViewModel roleCollection = _roleService.GetByRoleName(rolename);
+                if (HttpContext.User.IsInRole(rolename))
+                {
+                    ViewBag.Error = "Cannot delete your current role";
+                    return View();
+                }
+                else
+                {
+                    return View(roleCollection);
+                }
+            }
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(RoleViewModel roleDetails, FormCollection requestValidator)
         {
-            _roleService.Delete(roleDetails);
-            return RedirectToAction("Index");
+            if (roleDetails == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            else
+            {
+                _roleService.Delete(roleDetails);
+                return RedirectToAction("Index");
+            }
         }
     }
 }

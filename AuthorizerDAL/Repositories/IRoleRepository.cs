@@ -10,7 +10,7 @@ namespace AuthorizerDAL.Repositories
     public interface IRoleRepository
     {
         /// <summary>
-        /// Create a Role in database
+        /// Insert a Role in database
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
@@ -24,7 +24,7 @@ namespace AuthorizerDAL.Repositories
         int Update(Role role);
 
         /// <summary>
-        /// Delete a Role from database
+        /// Remove a Role from database
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
@@ -37,6 +37,19 @@ namespace AuthorizerDAL.Repositories
         /// <returns></returns>
         IList<Role> FindAll();
 
+        /// <summary>
+        /// Retrieve role details using rolename
+        /// </summary>
+        /// <param name="roleName"></param>
+        /// <returns></returns>
         Role GetByRoleName(string roleName);
+
+
+        /// <summary>
+        /// Retrieve page privileges using roleid
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        Role GetPagePriveleges(int roleId);
     }
 }

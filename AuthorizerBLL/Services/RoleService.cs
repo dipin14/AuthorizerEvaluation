@@ -38,7 +38,11 @@ namespace AuthorizerBLL.Services
         {
             return _iRoleRepository.FindAll().Select(r => new RoleDTO()
             {
-                RoleName = r.roleName
+                RoleId = r.roleId,
+                RoleName = r.roleName,
+                AccessToPageA = r.accessToPageA,
+                AccessToPageB = r.accessToPageB,
+                AccessToPageC = r.accessToPageC
             }).ToList();
         }
 
@@ -54,6 +58,11 @@ namespace AuthorizerBLL.Services
                 var checkRoleName = roleName.Trim();
                 return _iRoleRepository.GetByRoleName(checkRoleName);
             }
+        }
+
+        public RoleDTO GetPagePriveleges(int roleId)
+        {
+            return _iRoleRepository.GetPagePriveleges(roleId);
         }
     }
 }

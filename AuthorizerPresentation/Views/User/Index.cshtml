@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>List Of All Users</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -21,7 +21,7 @@
             @Html.DisplayNameFor(model => model.LastName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.UserRole)
+            @Html.DisplayNameFor(model => model.RoleName)
         </th>
         <th></th>
     </tr>
@@ -38,7 +38,7 @@
             @Html.DisplayFor(modelItem => item.LastName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.UserRole.RoleName)
+            @Html.DisplayFor(modelItem => item.RoleName)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { username=item.UserName }) |

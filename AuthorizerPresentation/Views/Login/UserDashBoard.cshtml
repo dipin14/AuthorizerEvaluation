@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "DashBoard";
+    ViewBag.Name = HttpContext.Current.Session["Username"];
+}
+
+<h2>DashBoard</h2>
+@if (HttpContext.Current.Session["Username"] != null)
+{
+    <p>Welcome <b>@ViewBag.Name</b></p>
+    <p>You have access to</p>
+    <ul>
+        @if (Session["PageA"].Equals(true))
+        {
+            <li>@Html.Label("PageA")</li>
+        }
+        @if (Session["PageB"].Equals(true))
+        {
+            <li>@Html.Label("PageB")</li>
+        }
+        @if (Session["PageC"].Equals(true))
+        {
+            <li>@Html.Label("PageC")</li>
+        }        
+    </ul>
+}
+else
+{
+    <p>Sorry couldn't identify users</p>
+}
+

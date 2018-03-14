@@ -3,42 +3,58 @@
 @{
     ViewBag.Title = "Login";
 }
+<link href="~/Content/Login.css" rel="stylesheet" />
 
-<h2>@ViewBag.Title</h2>
 
-@Html.ValidationSummary(true)
-@if (@ViewBag.Message != null)
+@if (Request.IsAuthenticated == false)
 {
-    <div style="color: red">
-        @ViewBag.Message
+    <div class="container">
+        <div class="card card-container">
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                {
+                @Html.AntiForgeryToken()
+                <h3 class="text-center login-title">Enter Login Details</h3>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Username, new { @class = "col-md-2 control-label sr-only" })
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @placeholder = "Enter Username" })
+                        @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label sr-only" })
+                        <div class="col-md-12">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Enter Password" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group" style="padding-right: 15px;padding-left: 15px;">
+                        <button type="submit" class="btn btn-lg btn-primary btn-block btn-signin">Login</button>
+                    </div>
+                    @Html.ValidationSummary(true)
+                if (@ViewBag.Message != null)
+                {
+                    <div style="color: red" >
+                        @ViewBag.Message
+                    </div>
+                }
+                <div class="form-group">
+                    <div class="checkbox" id="remember">
+                        <label>
+                            @Html.EditorFor(model => model.RememberMe)
+                            Remember Me
+                        </label>
+                    </div>
+                </div>
+            }
+        </div><!-- /card-container -->
     </div>
 }
-<div class="row">
-    <div class="col-md-8">
-        <section id="loginForm">
-            @using (Html.BeginForm("Login", "Login", FormMethod.Post))
-            {
-                @Html.AntiForgeryToken()
-                <h4>Please enter valid login details</h4>
-                        <hr />
-                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                        <div class="form-group">
-                            @Html.LabelFor(m => m.Username, new { @class = "col-md-2 control-label" })
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-                            <div class="col-md-10">
-                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                        <br /> <br />
-                        <button type="submit">Login</button>
-            }
-        </section>
-    </div>
-</div>
+else
+{
+    <h4>Authorization Error!!</h4>
+    <p>Not authorized or Already logged in as non-admin user<br />Please try logging out and logging in again </p>
+}
+

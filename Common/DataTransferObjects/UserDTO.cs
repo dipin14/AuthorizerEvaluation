@@ -13,7 +13,7 @@ namespace Common.DataTransferObjects
         string firstName;
         string lastName;
         string password;
-        Role role;
+        int roleId;
 
         public string UserName
         {
@@ -67,16 +67,16 @@ namespace Common.DataTransferObjects
             }
         }
 
-        public Role Role
+        public int RoleId
         {
             get
             {
-                return role;
+                return roleId;
             }
 
             set
             {
-                role = value;
+                roleId = value;
             }
         }
 
@@ -88,7 +88,7 @@ namespace Common.DataTransferObjects
                 firstName = userDto.FirstName,
                 lastName = userDto.LastName,
                 password = userDto.Password,
-                Role = userDto.Role
+                roleId = userDto.RoleId
             };
         }
 
@@ -100,7 +100,7 @@ namespace Common.DataTransferObjects
                 FirstName = user.firstName,
                 LastName = user.lastName,
                 Password = user.password,
-                Role = user.Role
+                RoleId = user.roleId
             };
         }
     }

@@ -15,7 +15,8 @@ namespace AuthorizerPresentation.ViewModels
         string lastName;
         string password;
         string confirmPassword;
-        RoleDTO userRole;
+        int roleId;
+        string roleName;
 
         [Required]
         [RegularExpression(@"^\S*$", ErrorMessage = "No white space allowed")]
@@ -65,6 +66,7 @@ namespace AuthorizerPresentation.ViewModels
         [DataType(DataType.Password)]
         [StringLength(100,ErrorMessage = "The {0} must be atleast {2} characters long",MinimumLength = 5)]
         [Display(Name = "Password")]
+        [Required]
         public string Password
         {
             get
@@ -94,41 +96,73 @@ namespace AuthorizerPresentation.ViewModels
             }
         }
 
-        public RoleDTO UserRole
+        public int RoleId
         {
             get
             {
-                return userRole;
+                return roleId;
             }
 
             set
             {
-                userRole = value;
+                roleId = value;
+            }
+        }
+
+        [Display(Name = "Role")]
+        public string RoleName
+        {
+            get
+            {
+                return roleName;
+            }
+
+            set
+            {
+                roleName = value;
             }
         }
 
         public static implicit operator UserDTO(UserViewModel user)
         {
-            return new UserDTO
+            if (user != null)
             {
-                UserName = user.userName,
-                FirstName = user.firstName,
-                LastName = user.lastName,
-                Password = user.password,
-                Role = user.UserRole
-            };
+                return new UserDTO
+                {
+                    UserName = user.userName,
+                    FirstName = user.firstName,
+                    LastName = user.lastName,
+                    Password = user.password,
+                    RoleId = user.roleId
+                };
+            }
+            else
+            {
+                return null;
+            }
         }
 
+        /// <summary>
+        /// Implicit conversion of UserDTO to UserViewModel
+        /// </summary>
+        /// <param name="user"></param>
         public static implicit operator UserViewModel(UserDTO user)
         {
-            return new UserViewModel
+            if (user != null)
             {
-                userName = user.UserName,
-                firstName = user.FirstName,
-                lastName = user.LastName,
-                password = user.Password,
-                userRole = user.Role
-            };
+                return new UserViewModel
+                {
+                    userName = user.UserName,
+                    firstName = user.FirstName,
+                    lastName = user.LastName,
+                    password = user.Password,
+                    roleId = user.RoleId
+                };
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

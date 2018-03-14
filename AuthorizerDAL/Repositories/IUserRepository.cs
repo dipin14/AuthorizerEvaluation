@@ -10,7 +10,7 @@ namespace AuthorizerDAL.Repositories
     public interface IUserRepository
     {
         /// <summary>
-        /// Create a User in database
+        /// Insert a User in database
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
@@ -24,7 +24,7 @@ namespace AuthorizerDAL.Repositories
         int Update(User user);
 
         /// <summary>
-        /// Delete a User from database
+        /// Remove a User from database
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
@@ -37,14 +37,20 @@ namespace AuthorizerDAL.Repositories
         /// <returns></returns>
         IList<User> FindAll();
 
-        User Login(User loginUser);
-
-        User GetByUserName(string userName);
 
         /// <summary>
-        /// Check if Admin exists in database
+        /// Check login credentials
         /// </summary>
+        /// <param name="loginUser"></param>
         /// <returns></returns>
-        int AdminExists();
+        User Login(User loginUser);
+
+        /// <summary>
+        /// Retrieve user by username
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        User GetByUserName(string userName);
+        
     }
 }

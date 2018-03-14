@@ -1,20 +1,28 @@
 ﻿@model AuthorizerPresentation.ViewModels.RoleViewModel
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "CreateRole";
 }
 
-<h2>Create</h2>
-
+<h2>Create new Role</h2>
+@if (@ViewBag.Message != null)
+{
+    <div style="color: red">
+        @ViewBag.Message
+    </div>
+    <div class="form-actions no-color">
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+}
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>RoleViewModel</h4>
+        <h4>Enter Role Details</h4>
         <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
         <div class="form-group">
             @Html.LabelFor(model => model.RoleName, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -22,10 +30,41 @@
                 @Html.ValidationMessageFor(model => model.RoleName, "", new { @class = "text-danger" })
             </div>
         </div>
+        <hr />
+        <h5>Specify page privileges</h5>
+        <div class="form-group">
+            @Html.LabelFor(model => model.AccessToPageA, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.AccessToPageA)
+                    @Html.ValidationMessageFor(model => model.AccessToPageA, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AccessToPageB, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.AccessToPageB)
+                    @Html.ValidationMessageFor(model => model.AccessToPageB, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AccessToPageC, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.AccessToPageC)
+                    @Html.ValidationMessageFor(model => model.AccessToPageC, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </div>
     </div>
@@ -34,7 +73,3 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

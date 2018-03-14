@@ -12,6 +12,7 @@ namespace AuthorizerPresentation.ViewModels
         string username;
         string password;
         string role;
+        bool rememberMe;
 
         [Required]
         [Display(Name = "Username")]
@@ -56,23 +57,59 @@ namespace AuthorizerPresentation.ViewModels
             }
         }
 
-        public static implicit operator UserDTO(UserLoginViewModel user)
+        [Display(Name = "Remember Me")]
+        public bool RememberMe
         {
-            return new UserDTO
+            get
             {
-                UserName = user.Username,
-                Password = user.Password
-            };
+                return rememberMe;
+            }
+
+            set
+            {
+                rememberMe = value;
+            }
         }
 
+        /// <summary>
+        /// Implicit conversion of UserLoginViewModel to UserDTO
+        /// </summary>
+        /// <param name="user"></param>
+        public static implicit operator UserDTO(UserLoginViewModel user)
+        {
+            if (user != null)
+            {
+                return new UserDTO
+                {
+                    UserName = user.Username,
+                    Password = user.Password
+                };
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Implicit conversion of UserDTO to UserLoginViewModel
+        /// </summary>
+        /// <param name="userDto"></param>
         public static implicit operator UserLoginViewModel(UserDTO userDto)
         {
-            return new UserLoginViewModel
+            if (userDto != null)
             {
-                Username = userDto.UserName,
-                Password = userDto.Password,
-                Role = userDto.Role.roleName
-            };
+                return new UserLoginViewModel
+                {
+                    Username = userDto.UserName,
+                    Password = userDto.Password,
+                    Role = userDto.RoleId.ToString()
+                };
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

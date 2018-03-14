@@ -1,0 +1,174 @@
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\csc.exe
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\vbc.exe
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\VBCSCompiler.exe
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerPresentation.dll.config
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerPresentation.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerPresentation.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerBLL.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Autofac.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Autofac.Integration.Mvc.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Helpers.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Mvc.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Razor.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.Razor.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Common.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerDAL.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\EntityFramework.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerBLL.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Autofac.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Autofac.Integration.Mvc.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Razor.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.Razor.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Helpers.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Mvc.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Common.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerDAL.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\EntityFramework.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\obj\Debug\AuthorizerPresentation.csprojResolveAssemblyReference.cache
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\obj\Debug\AuthorizerPresentation.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\obj\Debug\AuthorizerPresentation.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\EntityFramework.SqlServer.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Mono.Security.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Npgsql.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Npgsql.EntityFramework.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\EntityFramework.SqlServer.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Npgsql.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\Npgsql.EntityFramework.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\de\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\es\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\fi\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\fr\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\ja\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProject\AuthorizerPresentation\bin\zh-CN\Npgsql.resources.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\csc.exe
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\vbc.exe
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerPresentation.dll.config
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerPresentation.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerPresentation.pdb
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerBLL.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerDAL.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Autofac.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Autofac.Integration.Mvc.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Common.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\EntityFramework.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\EntityFramework.SqlServer.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Mono.Security.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Npgsql.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Npgsql.EntityFramework.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Helpers.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Mvc.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Razor.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.Razor.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerBLL.pdb
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\AuthorizerDAL.pdb
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Common.pdb
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Autofac.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Autofac.Integration.Mvc.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\EntityFramework.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\EntityFramework.SqlServer.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Npgsql.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\Npgsql.EntityFramework.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Razor.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Webpages.Razor.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Helpers.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\System.Web.Mvc.xml
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\de\Npgsql.resources.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\es\Npgsql.resources.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\fi\Npgsql.resources.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\fr\Npgsql.resources.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\ja\Npgsql.resources.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\bin\zh-CN\Npgsql.resources.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\obj\Debug\AuthorizerPresentation.csprojResolveAssemblyReference.cache
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\obj\Debug\AuthorizerPresentation.dll
+C:\Users\Dipin\Desktop\AuthorizationProject\AuthorizerPresentation\obj\Debug\AuthorizerPresentation.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\csc.exe
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\vbc.exe
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\VBCSCompiler.exe
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\AuthorizerPresentation.dll.config
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\AuthorizerPresentation.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\AuthorizerPresentation.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\AuthorizerBLL.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\AuthorizerDAL.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Autofac.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Autofac.Integration.Mvc.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Common.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\EntityFramework.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\EntityFramework.SqlServer.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Mono.Security.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Npgsql.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Npgsql.EntityFramework.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Helpers.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Mvc.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Razor.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Webpages.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Webpages.Razor.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\AuthorizerBLL.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\AuthorizerDAL.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Common.pdb
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Autofac.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Autofac.Integration.Mvc.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\EntityFramework.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\EntityFramework.SqlServer.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Npgsql.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\Npgsql.EntityFramework.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Razor.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Webpages.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Webpages.Razor.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Helpers.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\System.Web.Mvc.xml
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\de\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\es\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\fi\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\fr\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\ja\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\bin\zh-CN\Npgsql.resources.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\obj\Debug\AuthorizerPresentation.csprojResolveAssemblyReference.cache
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\obj\Debug\AuthorizerPresentation.dll
+C:\Users\Exp\Documents\Visual Studio 2015\Projects\AuthorizationProjectFinal\AuthorizerPresentation\obj\Debug\AuthorizerPresentation.pdb
